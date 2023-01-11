@@ -8,7 +8,7 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px;
+  padding: 3rem;
 }
 
 .hidden {
@@ -24,72 +24,74 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Elements */
-
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .logo img {
-  width: 68px;
-  height: 68px;
+  width: 4rem;
+  height: 4rem;
 }
-.fact-form {
+.tweet-form {
   background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 40px;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  gap: 16px;
-  border-radius: 16px;
+  gap: 1rem;
+  border-radius: 1rem;
 }
 
 .category {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 42px;
-  text-transform: uppercase;
+  font-size: 3rem;
   font-family: "Coiny", sans-serif;
   line-height: 1;
-  margin-top: 6px;
+  margin-top: 0.5rem;
 }
 
-.fact {
-  font-size: 20px;
+.tweet {
+  font-size: 1.3rem;
   line-height: 1.4;
   background-color: #44403c;
-  margin-bottom: 16px;
-  padding: 16px 24px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
   letter-spacing: -1px;
-  border-radius: 16px;
+  border-radius: 1rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .tag {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-family: "Coiny", sans-serif;
   padding-top: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 50px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 3rem;
+}
+
+.solved {
+  color: #14b8a6;
 }
 
 .vote-buttons {
@@ -97,15 +99,15 @@ h1 {
   flex-shrink: 0;
 
   display: flex;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .vote-buttons button {
   border: none;
   background-color: #78716c;
-  font-size: 6px 12px;
-  padding: 6px 12px;
-  border-radius: 100px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
   color: inherit;
   font-family: inherit;
   font-weight: 600;
@@ -121,28 +123,15 @@ ul {
   list-style: none;
 }
 
-.source:link,
-.source:visited {
-  color: #a8a29e;
-  text-decoration: none;
-  margin-left: 12px;
-  transition: 0.3s;
-}
-
-.source:hover,
-.source:active {
-  color: #3b82f6;
-}
-
 .btn {
   border: none;
   font-family: "Coiny", sans-serif;
   line-height: 1;
   text-transform: uppercase;
-  font-size: 17px;
-  padding: 16px 0 13px;
+  font-size: 1rem;
+  padding: 1rem 0 1rem;
   background-image: linear-gradient(134deg, #3b82f6, #ef4444, #16a34a, #eab308);
-  border-radius: 50px;
+  border-radius: 3rem;
   cursor: pointer;
   color: inherit;
   transition: 0.3s;
@@ -153,12 +142,12 @@ ul {
 }
 
 .btn-large {
-  font-size: 20px;
-  padding: 20px 32px 17px;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
 }
 
 .btn-all-categories {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -167,57 +156,56 @@ ul {
   background-image: none;
 }
 
-.fact-form input,
-.fact-form select {
+.tweet-form input,
+.tweet-form select {
   background-color: #78716c;
   border: none;
   border-radius: 100px;
-  padding: 16px;
-  font-size: 18px;
+  padding: 1rem;
+  font-size: 1.2rem;
   color: inherit;
   font-family: inherit;
 }
 
-.fact-form input::placeholder {
+.tweet-form input::placeholder {
   color: #a8a29e;
 }
 
-.fact-form input:first-child {
+.tweet-form input:first-child {
   flex-grow: 1;
 }
 
-.fact-form span {
+.tweet-form span {
   font-weight: 600;
-  font-size: 18px;
-  margin-right: 18px;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
 }
 
+/* Responsive design */
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 1000px) {
-  .body {
-    padding: 32px 48px;
-  }
-  .fact-form {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-  .fact-form input,
-  .fact-form select {
-    width: auto;
-  }
-}
-
 @media (max-width: 1200px) {
-  .fact {
+  .body {
+    padding: 2rem 3rem;
+  }
+
+  .tweet {
     flex-direction: column;
     align-items: flex-end;
-    gap: 12px;
+    gap: 0.8rem;
+  }
+  .tweet-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .tweet-form input,
+  .tweet-form select {
+    width: auto;
   }
 }
