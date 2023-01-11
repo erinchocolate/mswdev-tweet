@@ -57,15 +57,6 @@ async function loadFacts() {
   console.log(data);
 };
 
-// Load data from Supbase
-// async function loadFacts() {
-//   const res = await fetch("https://ezsycrxangafwhvixmio.supabase.co/rest/v1/facts", {
-//   headers: {
-//     apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6c3ljcnhhbmdhZndodml4bWlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzMzMTgzNDYsImV4cCI6MTk4ODg5NDM0Nn0.rQ3TrfMQ6lriaprezpnbW1ZpcjUw_w9H5uiK4RXXSTw",
-//     authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6c3ljcnhhbmdhZndodml4bWlvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY3MzMxODM0NiwiZXhwIjoxOTg4ODk0MzQ2fQ.Yhg9LSmdRHBR5C_3mcX4ieCz3K9X6L9nVhqlwqr-VcI",
-//   },
-// });
-//}
 
 
 // Toggle form visibility
