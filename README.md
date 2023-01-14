@@ -10,6 +10,7 @@ Features:
 - Upvote and downvote posts
 - Filter posts using category labels
 
+![demo](https://github.com/erinchocolate/mswdev-tweet/blob/master/demo.gif)
 ## Stacks
 
 ### Frontend
