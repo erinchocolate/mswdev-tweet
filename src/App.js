@@ -56,6 +56,7 @@ function Header({showForm, setShowForm}) {
 
 // Define categories fot tweets
 const CATEGORIES = [
+  { name: "all", color: "#f97316" },
   { name: "Course", color: "#3b82f6" },
   { name: "Lecturer", color: "#ef4444" },
   { name: "Program", color: "#db2777" },
@@ -105,8 +106,8 @@ function CategoryFilter({setCurrentCategory}) {
   return (
     <aside>
       <ul>
-        <li className="category"><button className="btn btn-all-categories" onClick={() => setCurrentCategory("all")}>All</button>
-        </li>
+        {/* <li className="category"><button className="btn btn-all-categories" onClick={() => setCurrentCategory("all")}>All</button>
+        </li> */}
         {CATEGORIES.map((category) => (
           <li key={category.name} className="category">
             <button className="btn btn-categories"
