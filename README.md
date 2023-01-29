@@ -1,6 +1,6 @@
 # MSwDev tweet
 
-MSwDev tweet is a forum app for MSwDev program students to share their feedback, suggestions and thoughts on the study and other related topics. 
+MSwDev tweet is a post app built in CSS and React.js. Used Supabase for API and Database management and deployed using Netlify.
 
 Link: https://mswdev.netlify.app/
 
@@ -11,25 +11,3 @@ Features:
 - Filter posts using category labels
 
 ![demo](https://github.com/erinchocolate/mswdev-tweet/blob/master/demo.gif)
-## Stacks
-
-### Frontend
-
-- HTML
-- CSS
-- JavaScript
-- React
-
-### Backend
-
-- Supabase
-
-### Serverless Backend
-
-- AWS Lambda
-- AWS API gateway
-- AWS DynamoDB
-
-### Deployment
-
-- Netlify
