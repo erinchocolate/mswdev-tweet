@@ -93,7 +93,7 @@ function NewTweetForm({setTweets, setShowForm}) {
   return (
     <form className="tweet-form" onSubmit={handleSubmit}>
     <input type="text" placeholder="Share your thought..." value={text} onChange={(e) => setText(e.target.value)} />
-      <span>{200 - textLength}</span>  
+    <span>{200 - textLength}</span>  
     <select value={category} onChange={(e) => setCategory(e.target.value)}>
       <option value="">Choose category: </option>
       {CATEGORIES.map((category) => (<option key={category.name} value={category.name}>{category.name.toUpperCase()}</option>))}
@@ -152,7 +152,6 @@ function Tweet({ tweet , setTweets}) {
     {tweet.text}
     </p>
     <span className="tag" style={{ backgroundColor: CATEGORIES.find((category) => category.name === tweet.category).color }}>{tweet.category}</span>
- 
     <div className="vote-buttons">
       <button onClick={()=>handleVote("voteAgree")}>👍 {tweet.voteAgree}</button>
       <button onClick={()=>handleVote("voteDisagree")}>👎 {tweet.voteDisagree}</button>
